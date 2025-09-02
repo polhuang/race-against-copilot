@@ -1,9 +1,9 @@
-import { ExecutionResult, TestCase, TestResult } from '@/types/challenge';
+import { ExecutionResult, TestCase } from '@/types/challenge';
 
 export class CodeSandbox {
   private iframe: HTMLIFrameElement | null = null;
   private messageId = 0;
-  private pendingPromises = new Map<number, { resolve: (value: any) => void; reject: (error: any) => void }>();
+  private pendingPromises = new Map<number, { resolve: (value: ExecutionResult) => void; reject: (error: unknown) => void }>();
   private isReady = false;
   private messageHandler: (event: MessageEvent) => void;
 

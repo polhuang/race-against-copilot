@@ -5,7 +5,6 @@ import GitHubHeader from '@/components/GitHubHeader';
 import CodeEditor from '@/components/CodeEditor';
 import TestResults from '@/components/TestResults';
 import GhostRace from '@/components/GhostRace';
-import ChallengeSelector from '@/components/ChallengeSelector';
 import DiffViewer from '@/components/DiffViewer';
 import { useTestRunner } from '@/hooks/useTestRunner';
 import { challenges } from '@/data/challenges';
