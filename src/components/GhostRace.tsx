@@ -17,7 +17,6 @@ export default function GhostRace({
 }: GhostRaceProps) {
   const [ghostProgress, setGhostProgress] = useState(0);
   const [isGhostComplete, setIsGhostComplete] = useState(false);
-  const [startTime] = useState(Date.now());
   
   // Ghost typing speed: roughly 100 characters per minute
   const GHOST_SPEED = 100; // characters per minute
@@ -40,7 +39,7 @@ export default function GhostRace({
     }, GHOST_DELAY);
 
     return () => clearInterval(interval);
-  }, [ghostCode.length, isUserComplete, isGhostComplete, onGhostComplete]);
+  }, [ghostCode.length, isUserComplete, isGhostComplete, onGhostComplete, GHOST_DELAY]);
 
   const userProgress = Math.min(userCode.length, ghostCode.length);
   const userPercentage = (userProgress / ghostCode.length) * 100;
@@ -154,7 +153,7 @@ export default function GhostRace({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
           </svg>
-          <span className="text-sm font-medium text-gray-300">GitHub Copilot's Live Coding</span>
+          <span className="text-sm font-medium text-gray-300">GitHub Copilot&apos;s Live Coding</span>
         </div>
         
         <div className="bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">

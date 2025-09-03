@@ -8,16 +8,16 @@ export interface Challenge {
 }
 
 export interface TestCase {
-  input: any[];
-  expected: any;
+  input: unknown[];
+  expected: unknown;
   description: string;
 }
 
 export interface TestResult {
   passed: boolean;
   error?: string;
-  actualResult?: any;
-  expectedResult?: any;
+  actualResult?: unknown;
+  expectedResult?: unknown;
 }
 
 export interface ExecutionResult {

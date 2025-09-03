@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import ReactDiffViewer from 'react-diff-viewer-continued';
+import ReactDiffViewer from 'react-diff-viewer-continued-react19';
 
 interface DiffViewerProps {
   userCode: string;

@@ -24,7 +24,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Race against Copilot is an interactive coding challenge platform where developers compete against GitHub's AI assistant to solve programming problems as quickly as possible. Sharpen your skills, learn new algorithms, and have fun coding.
+              Race against Copilot is an interactive coding challenge platform where developers compete against GitHub&apos;s AI assistant to solve programming problems as quickly as possible. Sharpen your skills, learn new algorithms, and have fun coding.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -94,7 +94,7 @@ export default function Home() {
               Built by GitHub Copilot
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Challenge yourself against the world's most advanced AI coding assistant. Test your skills, learn new patterns, and discover how you measure up against GitHub Copilot's solutions.
+              Challenge yourself against the world&apos;s most advanced AI coding assistant. Test your skills, learn new patterns, and discover how you measure up against GitHub Copilot&apos;s solutions.
             </p>
           </div>
 

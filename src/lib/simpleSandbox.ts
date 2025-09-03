@@ -7,6 +7,7 @@ export class SimpleSandbox {
       iframe.style.display = 'none';
       iframe.sandbox.add('allow-scripts');
       
+      // eslint-disable-next-line prefer-const
       let timeoutId: NodeJS.Timeout;
       let resolved = false;
       
